@@ -57,6 +57,20 @@
 
     
     <div id="regions_div" style="width: 900px; height: 500px;"></div>
+  
+  
+  <!-- Zeitstrahl, Ausgewählter wert kann durch "NewValue" referenziert werden -->
+   <input type="range" min="1980" max="2016" value="1980" step="1" onchange="showValue(this.value)" />
+  <span id="range">1980</span>
+  <script type="text/javascript">
+  function showValue(newValue)
+  {
+	document.getElementById("range").innerHTML=newValue;
+  //Noch nicht implementiert (Verküpfung Strahl -> Karte
+    /*drawMap(newValue); */
+  
+  }
+  
 
 
 </body>
